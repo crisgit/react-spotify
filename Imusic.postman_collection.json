@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "1bed90ff-95bf-438d-9f97-7a1a73c8fc33",
+		"name": "Imusic",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Alcymar Monteiro",
+			"item": [
+				{
+					"name": "https://open.spotify.com/artist/0TcVnvKse98awlZxtUKIOk",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						},
+						"description": "Lista de informações do cantor: Alcymar Monteiro"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Leela",
+			"item": [
+				{
+					"name": "https://open.spotify.com/artist/11irmEzISytQwB3G8uhC5E",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://open.spotify.com/artist/11irmEzISytQwB3G8uhC5E",
+							"protocol": "https",
+							"host": [
+								"open",
+								"spotify",
+								"com"
+							],
+							"path": [
+								"artist",
+								"11irmEzISytQwB3G8uhC5E"
+							]
+						},
+						"description": "Lista de informações da cantora: Leela"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Ney Alves",
+			"item": [
+				{
+					"name": "https://open.spotify.com/artist/2UhA8yc1DpFfkutXq5lMah",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://open.spotify.com/artist/2UhA8yc1DpFfkutXq5lMah",
+							"protocol": "https",
+							"host": [
+								"open",
+								"spotify",
+								"com"
+							],
+							"path": [
+								"artist",
+								"2UhA8yc1DpFfkutXq5lMah"
+							]
+						},
+						"description": "Lista de informações do cantor: Ney Alves"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Test",
+			"item": [
+				{
+					"name": "http://localhost:3000/callback#access_token=BQDcNKcosfMeCuawCyDnRQZ4HZ2YgUtu2hqLor_c0_LEUcYo-anVGxB_yuC0PLiccKAtMFvJwDGqw0j3atQru7GtU1RVto-K9HnW8q9AoaMfSoN5fk6rh3DvOTZkSbX8DC8C5QflS4TwLPyfETaQOGo764m6sp-v7rbxx_PvJsh_W5UKana_ME3x7rM3EqLQgqR8qup2biilW7WiRpvkozBEOk7r2xdvLhHY-0Yp3_6W-ycO23Z5hubKtwIfkBzx3eF8oHpP06vrsHaoPfLQ0OfGH6lS4IBrxA&token_type=Bearer&expires_in=3600",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "2ab1e793-4d65-45ac-b09b-5646ba202231",
+								"exec": [
+									"pm.test(\"Response time is less than 200ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(200);",
+									"});",
+									"",
+									"pm.test(\"Content-Type is present\", function () {",
+									"    pm.response.to.have.header(\"Content-Type\");",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/callback#access_token=BQDcNKcosfMeCuawCyDnRQZ4HZ2YgUtu2hqLor_c0_LEUcYo-anVGxB_yuC0PLiccKAtMFvJwDGqw0j3atQru7GtU1RVto-K9HnW8q9AoaMfSoN5fk6rh3DvOTZkSbX8DC8C5QflS4TwLPyfETaQOGo764m6sp-v7rbxx_PvJsh_W5UKana_ME3x7rM3EqLQgqR8qup2biilW7WiRpvkozBEOk7r2xdvLhHY-0Yp3_6W-ycO23Z5hubKtwIfkBzx3eF8oHpP06vrsHaoPfLQ0OfGH6lS4IBrxA&token_type=Bearer&expires_in=3600",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"callback"
+							],
+							"hash": "access_token=BQDcNKcosfMeCuawCyDnRQZ4HZ2YgUtu2hqLor_c0_LEUcYo-anVGxB_yuC0PLiccKAtMFvJwDGqw0j3atQru7GtU1RVto-K9HnW8q9AoaMfSoN5fk6rh3DvOTZkSbX8DC8C5QflS4TwLPyfETaQOGo764m6sp-v7rbxx_PvJsh_W5UKana_ME3x7rM3EqLQgqR8qup2biilW7WiRpvkozBEOk7r2xdvLhHY-0Yp3_6W-ycO23Z5hubKtwIfkBzx3eF8oHpP06vrsHaoPfLQ0OfGH6lS4IBrxA&token_type=Bearer&expires_in=3600"
+						},
+						"description": "Test: time is less than 200ms\nTest: Content-Type is present"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
