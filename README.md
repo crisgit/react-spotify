@@ -2,8 +2,6 @@
 
 This is `React-Spotify`, a React front end client that communicates with the Spotify API.
 
-See it in action [here](http://crisgit.github.io/react-spotify).
-
 use the following credentials:
 
 > email e senha: crie uma conta no spotify api para rodar este exemplo ;) | https://developer.spotify.com
